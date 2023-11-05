@@ -6,6 +6,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center p-24">
      <h1>Welcome to the jungle.</h1>
     <p>This page is under construction.</p>
+    <Link href="/lingolink">LingoLink</Link>
     <Link href="mailto:fatihhtoker@gmailcom">fatihhtoker@gmail.com</Link>
     </main>
   )
