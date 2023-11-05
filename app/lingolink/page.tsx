@@ -5,15 +5,6 @@
  */
 import Link from "next/link";
 import Image from "next/image";
-// import googlePlay from '/google_play.webp'
-import appStore from "/app_store.webp";
-import { Button } from "@/components/ui/button";
-import type { Metadata } from "next";
-
-// export const metadata: Metadata = {
-//   title: "LingoLink",
-//   description: "Homepage of LingoLink Quiz Game",
-// };
 
 export default function Component() {
   return (
