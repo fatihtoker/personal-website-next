@@ -2,34 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --ink: #f3efe7;
+    --muted: #a9a397;
+    --canvas: #121313;
+    --surface: #1b1d1c;
+    --surface-strong: #252826;
+    --line: #343834;
+    --acid: #c9f66b;
+    --coral: #ff8066;
+    --sky: #79c7ff;
+    --radius-sm: 0.875rem;
+    --radius-lg: 1.75rem;
+    --shadow-card: 0 24px 80px rgba(0, 0, 0, 0.28);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background: var(--canvas);
+  }
+
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--canvas);
+    font-family: var(--font-manrope), sans-serif;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--acid);
+    outline-offset: 4px;
   }
 }
 
-.tooltip {
-  @apply invisible absolute;
+@layer utilities {
+  .font-display {
+    font-family: var(--font-space-grotesk), sans-serif;
+  }
+  .font-sans {
+    font-family: var(--font-manrope), sans-serif;
+  }
 }
 
-.has-tooltip:hover .tooltip {
-  @apply visible z-50;
-}
-
-body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

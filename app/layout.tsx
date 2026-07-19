@@ -1,12 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, Manrope } from "next/font/google";
 import "./globals.css";
+import { getSiteUrl } from "@/lib/site-url";
+import SiteHeader from "@/components/site/SiteHeader";
+import SiteFooter from "@/components/site/SiteFooter";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Fatih Toker",
-  description: "Homepage of Fatih Toker",
+  metadataBase: getSiteUrl(),
+  title: { default: "Fatih Toker — Games & Apps", template: "%s | Fatih Toker" },
+  description: "Full-stack developer turning spare-time ideas into games and useful apps.",
 };
 
 export default function RootLayout({
@@ -15,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${spaceGrotesk.variable} ${manrope.variable}`}>
       <head>
         <link
           rel="apple-touch-icon"
@@ -39,7 +53,11 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className="min-h-screen flex flex-col bg-[var(--canvas)] text-[var(--ink)] antialiased font-sans">
+        <SiteHeader />
+        <main className="flex-grow">{children}</main>
+        <SiteFooter />
+      </body>
     </html>
   );
 }

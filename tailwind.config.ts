@@ -13,7 +13,21 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        display: ['var(--font-space-grotesk)', 'sans-serif'],
+        sans: ['var(--font-manrope)', 'sans-serif'],
+      },
       colors: {
+        ink: 'var(--ink)',
+        muted: 'var(--muted)',
+        canvas: 'var(--canvas)',
+        surface: 'var(--surface)',
+        'surface-strong': 'var(--surface-strong)',
+        line: 'var(--line)',
+        acid: 'var(--acid)',
+        coral: 'var(--coral)',
+        sky: 'var(--sky)',
+
         red: '#DC2626',
         'pale-yellow': '#FFFFD1',
         'gray': '#393D3F',
