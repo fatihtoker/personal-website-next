@@ -1,0 +1,22 @@
+[
+  {
+    "schemaVersion": 1,
+    "kind": "showcase",
+    "slug": "lingolink",
+    "title": "LingoLink",
+    "cardSummary": "A fast-paced mobile game for testing your linguistic instincts.",
+    "description": "Connect words and languages through quick, highly replayable challenges built around linguistic intuition.",
+    "category": "app",
+    "tags": ["Mobile", "Language", "Game"],
+    "coverSrc": "/project-covers/lingolink.webp",
+    "coverAlt": "LingoLink language challenge displayed on a mobile phone.",
+    "publishedAt": "2026-07-19",
+    "featured": false,
+    "sortOrder": 70,
+    "seo": {
+      "title": "LingoLink | Fatih Toker",
+      "description": "Discover LingoLink, a fast-paced mobile language challenge by Fatih Toker."
+    },
+    "detailHref": "/lingolink"
+  }
+]
