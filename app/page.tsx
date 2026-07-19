@@ -1,13 +1,16 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Hero from "@/components/home/Hero";
+import FeaturedProjects from "@/components/home/FeaturedProjects";
+import ProjectCatalog from "@/components/home/ProjectCatalog";
+import { getAllProjects } from "@/lib/projects/repository";
 
 export default function Home() {
+  const projects = getAllProjects();
+
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
-     <h1>Welcome to the jungle.</h1>
-    <p>This page is under construction.</p>
-    <Link href="/lingolink">LingoLink</Link>
-    <Link href="mailto:fatihhtoker@gmailcom">fatihhtoker@gmail.com</Link>
-    </main>
-  )
+    <>
+      <Hero />
+      <FeaturedProjects projects={projects} />
+      <ProjectCatalog projects={projects} />
+    </>
+  );
 }
