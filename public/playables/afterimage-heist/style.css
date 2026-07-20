@@ -1,0 +1,135 @@
+:root {
+  color: #f8f4e8;
+  background: #0d1422;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#game-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#game-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #263858 0%, #0d1422 72%);
+}
+
+#game-container canvas {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 45%);
+}
+
+.game-shell {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.game-shell button {
+  min-width: 44px;
+  min-height: 44px;
+  border: 2px solid #f2d7a7;
+  border-radius: 8px;
+  color: #101827;
+  background: #f2d7a7;
+  font: 700 14px/1 system-ui, sans-serif;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: none;
+}
+
+.game-shell button:hover,
+.game-shell button:focus-visible {
+  outline: 3px solid #8ed8d2;
+  outline-offset: 3px;
+  background: #f2b84b;
+}
+
+.game-shell button:active {
+  transform: translateY(2px);
+}
+
+.game-shell__status {
+  position: absolute;
+  top: max(12px, env(safe-area-inset-top));
+  right: 16px;
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #f8f4e8;
+  background: rgb(16 24 39 / 86%);
+  font-size: 13px;
+}
+
+.game-shell__menu,
+.game-shell__complete {
+  position: absolute;
+  left: 50%;
+  bottom: max(22%, env(safe-area-inset-bottom));
+  display: flex;
+  gap: 12px;
+  transform: translateX(-50%);
+}
+
+.game-shell__utility {
+  position: absolute;
+  top: max(56px, env(safe-area-inset-top));
+  left: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.game-shell__movement {
+  position: absolute;
+  right: 16px;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  display: flex;
+  gap: 8px;
+}
+
+.game-shell__direction {
+  width: 54px;
+  font-size: 22px !important;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 680px) {
+  .game-shell__status {
+    left: 12px;
+    right: auto;
+  }
+
+  .game-shell__utility {
+    right: 12px;
+    left: 12px;
+    flex-wrap: wrap;
+  }
+
+  .game-shell__movement {
+    right: 8px;
+    bottom: max(8px, env(safe-area-inset-bottom));
+    left: 8px;
+    justify-content: center;
+  }
+
+  .game-shell button {
+    font-size: 12px;
+  }
+}

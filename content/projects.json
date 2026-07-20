@@ -1,13 +1,275 @@
 [
   {
     "schemaVersion": 1,
+    "kind": "playable-game",
+    "slug": "chitin-colony",
+    "title": "Chitin Colony: Hex Empire",
+    "cardSummary": "Build a living ant colony by digging chambers, assigning castes, and evolving the swarm.",
+    "description": "Shape a subterranean hex empire, balance resources, hatch specialized ants, and evolve a resilient colony through active events and long-term progression.",
+    "category": "game",
+    "tags": [
+      "Strategy",
+      "Simulation",
+      "Idle"
+    ],
+    "coverSrc": "/project-covers/chitin-colony.webp",
+    "coverAlt": "A crowned ant overlooks glowing hexagonal chambers in a warm underground colony.",
+    "publishedAt": "2026-07-20",
+    "featured": true,
+    "sortOrder": 10,
+    "seo": {
+      "title": "Play Chitin Colony: Hex Empire | Fatih Toker",
+      "description": "Play Chitin Colony, a browser strategy and colony-management game by Fatih Toker."
+    },
+    "playablePath": "/playables/chitin-colony/index.html",
+    "supportedDevices": [
+      "desktop",
+      "tablet",
+      "mobile"
+    ],
+    "controls": [
+      "mouse",
+      "touch"
+    ],
+    "recommendedAspectRatio": "16:9",
+    "minimumViewport": {
+      "width": 390,
+      "height": 700
+    },
+    "source": {
+      "repository": "https://github.com/fatihtoker/idea-generator",
+      "commit": "9b5b456ea717aa3bfdde75a780dcb023f93bd915"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "kind": "playable-game",
+    "slug": "sunset-circuit",
+    "title": "Sunset Circuit",
+    "cardSummary": "Hold, drift, and release through stylized corners in a one-touch racing challenge.",
+    "description": "Race an authored line through vivid worlds, timing each drift entry and release while slow-motion feedback turns every corner into a readable skill test.",
+    "category": "game",
+    "tags": [
+      "Racing",
+      "Timing",
+      "Arcade"
+    ],
+    "coverSrc": "/project-covers/sunset-circuit.webp",
+    "coverAlt": "A compact racing car drifts around a glowing corner beneath a saturated sunset sky.",
+    "publishedAt": "2026-07-20",
+    "featured": true,
+    "sortOrder": 20,
+    "seo": {
+      "title": "Play Sunset Circuit | Fatih Toker",
+      "description": "Play Sunset Circuit, a one-touch browser drifting game by Fatih Toker."
+    },
+    "playablePath": "/playables/sunset-circuit/index.html",
+    "supportedDevices": [
+      "desktop",
+      "tablet",
+      "mobile"
+    ],
+    "controls": [
+      "keyboard",
+      "mouse",
+      "touch"
+    ],
+    "recommendedAspectRatio": "16:9",
+    "minimumViewport": {
+      "width": 390,
+      "height": 700
+    },
+    "source": {
+      "repository": "https://github.com/fatihtoker/idea-generator",
+      "commit": "9b5b456ea717aa3bfdde75a780dcb023f93bd915"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "kind": "playable-game",
+    "slug": "afterimage-heist",
+    "title": "Afterimage Heist",
+    "cardSummary": "Record eight-second runs and cooperate with your past selves to crack a clockwork museum.",
+    "description": "Plan synchronized museum heists by recording deterministic actions, then coordinate translucent afterimages across compact isometric puzzle levels.",
+    "category": "game",
+    "tags": [
+      "Puzzle",
+      "Heist",
+      "Strategy"
+    ],
+    "coverSrc": "/project-covers/afterimage-heist.webp",
+    "coverAlt": "A masked thief and translucent teal afterimages cross a brass clockwork museum gallery.",
+    "publishedAt": "2026-07-20",
+    "featured": true,
+    "sortOrder": 30,
+    "seo": {
+      "title": "Play Afterimage Heist | Fatih Toker",
+      "description": "Play Afterimage Heist, an isometric browser puzzle game about cooperating with recorded past selves."
+    },
+    "playablePath": "/playables/afterimage-heist/index.html",
+    "supportedDevices": [
+      "desktop",
+      "tablet",
+      "mobile"
+    ],
+    "controls": [
+      "keyboard",
+      "mouse",
+      "touch",
+      "gamepad"
+    ],
+    "recommendedAspectRatio": "9:16",
+    "minimumViewport": {
+      "width": 390,
+      "height": 700
+    },
+    "source": {
+      "repository": "https://github.com/fatihtoker/idea-generator",
+      "commit": "9b5b456ea717aa3bfdde75a780dcb023f93bd915"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "kind": "playable-game",
+    "slug": "voxel-crush",
+    "title": "Voxel Crush",
+    "cardSummary": "Time the press, charge Frenzy, and shatter colorful voxel objects piece by piece.",
+    "description": "Alternate between precision timing and a rapid, consequence-free Frenzy phase in a tactile browser game filled with crunchy voxel destruction.",
+    "category": "game",
+    "tags": [
+      "Arcade",
+      "Timing",
+      "Destruction"
+    ],
+    "coverSrc": "/project-covers/voxel-crush.webp",
+    "coverAlt": "A hydraulic press bursts through a colorful voxel object as cubes scatter across the workshop.",
+    "publishedAt": "2026-07-20",
+    "featured": false,
+    "sortOrder": 40,
+    "seo": {
+      "title": "Play Voxel Crush | Fatih Toker",
+      "description": "Play Voxel Crush, a timing and rapid-tap voxel destruction game by Fatih Toker."
+    },
+    "playablePath": "/playables/voxel-crush/index.html",
+    "supportedDevices": [
+      "desktop",
+      "tablet",
+      "mobile"
+    ],
+    "controls": [
+      "keyboard",
+      "mouse",
+      "touch",
+      "gamepad"
+    ],
+    "recommendedAspectRatio": "16:9",
+    "minimumViewport": {
+      "width": 390,
+      "height": 700
+    },
+    "source": {
+      "repository": "https://github.com/fatihtoker/idea-generator",
+      "commit": "9b5b456ea717aa3bfdde75a780dcb023f93bd915"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "kind": "playable-game",
+    "slug": "ink-slide",
+    "title": "Ink Slide",
+    "cardSummary": "Dash a living drop of ink across parchment, dodging obstacles and collecting gold leaf.",
+    "description": "Guide a nimble ink drop through a tactile parchment world using quick directional dashes, precise movement, and momentum-aware obstacle runs.",
+    "category": "game",
+    "tags": [
+      "Runner",
+      "Arcade",
+      "3D"
+    ],
+    "coverSrc": "/project-covers/ink-slide.webp",
+    "coverAlt": "A glossy black ink drop races across parchment between wax seals and scattered gold leaf.",
+    "publishedAt": "2026-07-20",
+    "featured": false,
+    "sortOrder": 50,
+    "seo": {
+      "title": "Play Ink Slide | Fatih Toker",
+      "description": "Play Ink Slide, a fast browser runner set across parchment and ink by Fatih Toker."
+    },
+    "playablePath": "/playables/ink-slide/index.html",
+    "supportedDevices": [
+      "desktop",
+      "tablet",
+      "mobile"
+    ],
+    "controls": [
+      "keyboard",
+      "mouse",
+      "touch"
+    ],
+    "recommendedAspectRatio": "16:9",
+    "minimumViewport": {
+      "width": 390,
+      "height": 700
+    },
+    "source": {
+      "repository": "https://github.com/fatihtoker/idea-generator",
+      "commit": "9b5b456ea717aa3bfdde75a780dcb023f93bd915"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "kind": "playable-game",
+    "slug": "snap-slice",
+    "title": "Snap Slice",
+    "cardSummary": "Wait for the perfect instant and split each moving shape with a single precise tap.",
+    "description": "A focused portrait arcade game about timing one clean slice as geometric targets move through a restrained, high-contrast arena.",
+    "category": "game",
+    "tags": [
+      "Arcade",
+      "Timing",
+      "Minimalist"
+    ],
+    "coverSrc": "/project-covers/snap-slice.webp",
+    "coverAlt": "A sharp luminous line splits a dark geometric shape at the exact center of a portrait arena.",
+    "publishedAt": "2026-07-20",
+    "featured": false,
+    "sortOrder": 60,
+    "seo": {
+      "title": "Play Snap Slice | Fatih Toker",
+      "description": "Play Snap Slice, a minimalist one-tap precision game by Fatih Toker."
+    },
+    "playablePath": "/playables/snap-slice/index.html",
+    "supportedDevices": [
+      "desktop",
+      "tablet",
+      "mobile"
+    ],
+    "controls": [
+      "mouse",
+      "touch"
+    ],
+    "recommendedAspectRatio": "9:16",
+    "minimumViewport": {
+      "width": 390,
+      "height": 700
+    },
+    "source": {
+      "repository": "https://github.com/fatihtoker/idea-generator",
+      "commit": "9b5b456ea717aa3bfdde75a780dcb023f93bd915"
+    }
+  },
+  {
+    "schemaVersion": 1,
     "kind": "showcase",
     "slug": "lingolink",
     "title": "LingoLink",
     "cardSummary": "A fast-paced mobile game for testing your linguistic instincts.",
     "description": "Connect words and languages through quick, highly replayable challenges built around linguistic intuition.",
     "category": "app",
-    "tags": ["Mobile", "Language", "Game"],
+    "tags": [
+      "Mobile",
+      "Language",
+      "Game"
+    ],
     "coverSrc": "/project-covers/lingolink.webp",
     "coverAlt": "LingoLink language challenge displayed on a mobile phone.",
     "publishedAt": "2026-07-19",

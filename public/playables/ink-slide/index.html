@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ink Slide</title>
+    <meta name="x-ogp-key" content="PF_DUMMY_KEY" />
+    <script src="https://sdk.play.fun/latest"></script>
+  <script type="module" crossorigin src="./assets/index-3KbVdjBX.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-gfY6Uinh.css">
+</head>
+<body>
+    <div id="game-container"></div>
+
+    <div id="ui-root">
+        <!-- Start Menu -->
+        <div id="start-menu" class="overlay">
+            <div class="menu-container">
+                <h1 class="illuminated-title">Ink Slide</h1>
+                <div class="menu-content">
+                    <p class="tagline">Roll the ink, leave your mark.</p>
+                    <div class="menu-buttons">
+                        <button id="start-button" class="wax-seal-button">START</button>
+                        <button id="shop-button" class="icon-text-button">🛒 SHOP</button>
+                        <button id="leaderboard-button" class="icon-text-button">🏆 RANK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HUD -->
+        <div id="hud" class="hidden">
+            <div class="hud-top">
+                <div class="hud-left">
+                    <div id="ink-container">
+                        <div class="hud-label">INK</div>
+                        <div class="progress-outer">
+                            <div id="ink-bar" class="progress-inner"></div>
+                        </div>
+                    </div>
+                    <div id="score-container">
+                        <div class="hud-label">DIST</div>
+                        <div id="score-display">0m</div>
+                    </div>
+                </div>
+                <div class="hud-right">
+                    <div id="coin-container">
+                        <span class="coin-icon">🪙</span>
+                        <span id="coin-count">0</span>
+                    </div>
+                    <button id="pause-button" class="pause-btn">II</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pause Menu -->
+        <div id="pause-menu" class="overlay hidden">
+            <div class="parchment-modal">
+                <h2>PAUSE</h2>
+                <div class="modal-buttons">
+                    <button id="resume-button" class="menu-button">CONTINUE</button>
+                    <button id="restart-button-pause" class="menu-button secondary">RESTART</button>
+                    <button id="main-menu-button-pause" class="menu-button secondary">MAIN MENU</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over" class="overlay hidden">
+            <div class="parchment-modal">
+                <h1 id="game-over-title">FINIS</h1>
+                <div class="final-stats">
+                    <p>Distance: <span id="final-score">0m</span></p>
+                    <p>Best: <span id="high-score">0m</span></p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; width: 100%; gap: 15px; margin-top: 1.5rem;">
+                    <button id="retry-button" class="wax-seal-button" style="margin: 0;">RENEW</button>
+                    <button id="main-menu-button-over" class="menu-button secondary" style="margin: 0; width: 80%;">MAIN MENU</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Continue Modal -->
+        <div id="ad-continue-modal" class="overlay hidden">
+            <div class="parchment-modal ad-modal">
+                <h2>OUT OF INK!</h2>
+                <p>Watch an ad to continue the slide?</p>
+                <div class="ad-timer-container">
+                    <div id="ad-timer-bar"></div>
+                </div>
+                <div class="modal-buttons">
+                    <button id="watch-ad-button" class="menu-button">WATCH AD</button>
+                    <button id="skip-ad-button" class="menu-button secondary">END RUN</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shop Modal -->
+        <div id="shop-modal" class="overlay hidden">
+            <div class="parchment-modal shop-modal-container">
+                <div class="shop-header">
+                    <h2>THE SCRIPTORIUM</h2>
+                    <button id="close-shop" class="close-btn">&times;</button>
+                </div>
+
+                <div class="shop-tabs">
+                    <button class="tab-btn active" data-tab="colors">COLORS</button>
+                    <button class="tab-btn" data-tab="patterns">PATTERNS</button>
+                    <button class="tab-btn" data-tab="skins">ROADS</button>
+                </div>
+
+                <div class="shop-content">
+                    <div id="shop-items-grid" class="items-grid">
+                        <!-- Items populated by JS -->
+                    </div>
+                </div>
+
+                <div class="shop-footer">
+                    <div class="currency">🪙 <span id="shop-coin-count">0</span></div>
+                    <button id="earn-coins-ad" class="ad-coin-btn">+🪙 Watch Ad</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leaderboard Modal -->
+        <div id="leaderboard-modal" class="overlay hidden">
+            <div class="parchment-modal">
+                <div class="shop-header">
+                    <h2>LEADERBOARD</h2>
+                    <button id="close-leaderboard" class="close-btn">&times;</button>
+                </div>
+                <div id="leaderboard-list" class="leaderboard-list">
+                    <!-- Loaded via SDK -->
+                    <p>Loading legends...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
