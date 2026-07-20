@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden py-24 md:py-32 bg-[var(--canvas)] border-b border-[var(--line)]">
+    <section id="about" className="relative overflow-hidden py-24 md:py-32 bg-[var(--canvas)] border-b border-[var(--line)]">
       {/* Decorative background grid pattern */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{
         backgroundImage: `radial-gradient(var(--ink) 1px, transparent 1px)`,

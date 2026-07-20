@@ -18,7 +18,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const actionText = isPlayable ? "View game" : "View project";
 
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-[var(--radius-sm)] border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--acid)] transition-all duration-300">
+    <article className="group relative flex flex-col h-full overflow-hidden rounded-[var(--radius-sm)] border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--acid)] transition-all duration-300">
       {/* 16:9 Cover Image Wrapper */}
       <div className="relative aspect-video w-full overflow-hidden bg-[var(--canvas)]">
         <Image

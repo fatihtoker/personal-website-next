@@ -36,7 +36,7 @@ export default function FeaturedProjects({ projects }: FeaturedProjectsProps) {
             }
 
             return (
-              <div key={project.slug} className={gridSpanClass}>
+              <div key={project.slug} className={`${gridSpanClass} flex flex-col`}>
                 <ProjectCard project={project} />
               </div>
             );
