@@ -34,9 +34,8 @@ export default function HeroSection() {
       ))}
 
       <div className="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center gap-12">
-        
         {/* Left Column - Text & CTAs */}
-        <motion.div 
+        <motion.div
           className="flex-1 text-center lg:text-left space-y-8"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,21 +44,21 @@ export default function HeroSection() {
           <div className="inline-block px-4 py-1.5 rounded-full bg-lingo-surface-elevated border border-lingo-border text-lingo-primary-light font-semibold text-sm mb-4">
             New Game Modes Available 🚀
           </div>
-          
+
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-lingo-text leading-tight tracking-tight">
             Test your <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-lingo-primary-light to-lingo-accent-light">
               linguistic instincts.
             </span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-lingo-text-secondary max-w-2xl mx-auto lg:mx-0">
-            Beat the clock. Guess the language. Level up your brain. 
-            Join thousands of players in the ultimate fast-paced language challenge!
+            Beat the clock. Guess the language. Level up your brain. Join
+            thousands of players in the ultimate fast-paced language challenge!
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-            <motion.a 
+            <motion.a
               href="https://play.google.com/store/apps/details?id=com.fatihtoker.lingo_link"
               target="_blank"
               rel="noopener noreferrer"
@@ -76,10 +75,14 @@ export default function HeroSection() {
                 priority
               />
             </motion.a>
-            
-            <motion.div 
+
+            <motion.a
+              href="https://apps.apple.com/us/app/lingolink-guess-languages/id6791171235"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
-              className="relative group cursor-not-allowed opacity-60"
+              whileTap={{ scale: 0.95 }}
+              className="cursor-pointer shadow-lg shadow-lingo-primary/20"
             >
               <Image
                 src="/app_store.webp"
@@ -88,21 +91,18 @@ export default function HeroSection() {
                 height={54}
                 className="h-[54px] w-auto object-contain"
               />
-              <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-lingo-surface text-lingo-text-secondary text-xs px-3 py-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md">
-                Coming soon to iOS
-              </div>
-            </motion.div>
+            </motion.a>
           </div>
         </motion.div>
 
         {/* Right Column - 3D Mockup / App Interface Preview */}
-        <motion.div 
+        <motion.div
           className="flex-1 flex justify-center lg:justify-end w-full max-w-md lg:max-w-none"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-          <motion.div 
+          <motion.div
             className="relative w-full max-w-[320px] aspect-[1/2.1] bg-lingo-surface border-4 border-lingo-surface-elevated rounded-[40px] shadow-2xl shadow-lingo-primary/30 overflow-hidden flex flex-col"
             animate={{ y: [0, -15, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -112,7 +112,7 @@ export default function HeroSection() {
             <div className="absolute top-0 inset-x-0 h-7 flex justify-center z-20">
               <div className="w-1/3 h-full bg-lingo-surface-elevated rounded-b-xl"></div>
             </div>
-            
+
             {/* Game Screen Mock */}
             <div className="flex-1 flex flex-col p-6 pt-12 bg-lingo-bg relative">
               <div className="flex justify-between items-center mb-8">
@@ -123,9 +123,9 @@ export default function HeroSection() {
                   <span>💎</span> 450
                 </div>
               </div>
-              
+
               <div className="text-center space-y-2 flex-1 flex flex-col justify-center">
-                <motion.div 
+                <motion.div
                   className="bg-lingo-surface-elevated p-6 rounded-2xl shadow-lg border border-lingo-border"
                   animate={{ scale: [1, 1.02, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
@@ -134,27 +134,29 @@ export default function HeroSection() {
                     &quot;Bonjour le monde, comment allez-vous?&quot;
                   </p>
                 </motion.div>
-                
+
                 <div className="grid grid-cols-2 gap-3 mt-8">
-                  {['French', 'Spanish', 'Italian', 'Portuguese'].map((lang, idx) => (
-                    <div 
-                      key={lang}
-                      className={`p-4 rounded-xl font-bold text-center border-2 transition-all cursor-pointer
-                        ${idx === 0 
-                          ? 'bg-lingo-accent/20 border-lingo-accent text-lingo-accent' 
-                          : 'bg-lingo-surface border-lingo-surface-elevated text-lingo-text-secondary hover:border-lingo-primary hover:text-lingo-text'
+                  {["French", "Spanish", "Italian", "Portuguese"].map(
+                    (lang, idx) => (
+                      <div
+                        key={lang}
+                        className={`p-4 rounded-xl font-bold text-center border-2 transition-all cursor-pointer
+                        ${
+                          idx === 0
+                            ? "bg-lingo-accent/20 border-lingo-accent text-lingo-accent"
+                            : "bg-lingo-surface border-lingo-surface-elevated text-lingo-text-secondary hover:border-lingo-primary hover:text-lingo-text"
                         }
                       `}
-                    >
-                      {lang}
-                    </div>
-                  ))}
+                      >
+                        {lang}
+                      </div>
+                    ),
+                  )}
                 </div>
               </div>
             </div>
           </motion.div>
         </motion.div>
-
       </div>
     </section>
   );
